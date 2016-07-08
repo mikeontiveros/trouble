@@ -10,7 +10,7 @@ for (var i = 0; i < 4 * 7; i++) {
     loop.push(-1);
 }
 
-var gameOn = false;
+var active = [], turn = -1, gameOn = false;
 
 
 $('#requestGame').click(requestGame);
@@ -29,6 +29,7 @@ function requestGame() {
     }
 }
 
+
 function atLeast2 () {
     var sumEnabled = 0;
     for (var i = 0; i < 4; i++) {
@@ -36,6 +37,7 @@ function atLeast2 () {
     }
     return sumEnabled > 1;
 }
+
 
 function playGame() {
     gameOn = true;
@@ -58,19 +60,17 @@ function doMove(evt) {
 function setupGame() {
     for (var i = 0; i < 4; i++) {
         player[i].active = $('#e' + i).text() == "X";
-        player[i].dugout = 4 * player[i].active
+        player[i].dugout = 4 * player[i].active;
+        player[i].lane = loop.concat( [-1, -1, -1, -1] );
+        if (player[i].active) { active.push(i); }
     }
-    console.log(player);
-
+    console.log(active);
+    console.log(active.length)
+    turn = active[ Math.floor(active.length * Math.random()) ];
+    console.log(turn);
+    $('#gamelog').text("Game on! " + player[turn].name + " goes first. Click the die to roll.");
 }
 
-
-for (i = 0; i < 4; i++) {
-    player[i].lane = loop.concat( [-1, -1, -1, -1] )
-}
-
-turn = 0;
-over = false;
 
 // while (!over) {
 
