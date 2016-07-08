@@ -64,11 +64,19 @@ function doMove(evt) {
                 } else {
                     message = message + " and has no options. "
                     nextTurn();
-                    $('#gamelog').text(message)
+                    $('#gamelog').text(message);
                 }
             }
         } else {
             message = "";
+            var choice = getChoice(evt.target.id);
+            if (options.indexOf(choice) < 0) {
+                $('#gamelog').text("Invalid choice. Try again.");
+            } else {
+                movePeg();
+                checkWin();
+                nextTurn();
+            }
         }
     } else {
         if ( $(evt.target).hasClass("enable") ) {
@@ -132,6 +140,34 @@ function nextTurn() {
     rolling = true
 }
 
-// if any of a player's pieces are in his dugout, he is said to have a piece at position -6 in his lane.
 
+function getChoice(etid) {
+    var choice = -1;
+    if (etid == "d" + turn) {
+        choice = -6;
+    } else if (etid.substring(0,1) == "h") {
+        choice = Number(etid.substring(1)) - 7 * turn;
+        if (choice < 0) { choice = choice + 28; }
+    } else if (etid.substring(0,1) == "f") {
+        choice = Number(etid.substring(1)) - 4 * turn;
+        if ( -1 < choice && choice < 4 ) {
+            choice = 28 + choice;
+        }
+    }
+    return choice;
+}
+
+
+function movePeg() {
+    // lane2loop();
+}
+
+
+function checkWin() {
+    // if (no win) {
+    //     rolling = true;
+    // } else {
+    //     gameWon = true;
+    // }
+}
 
