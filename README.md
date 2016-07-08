@@ -1,7 +1,7 @@
 # Game: Trouble by Hasbro
 <https://en.wikipedia.org/wiki/Trouble_(board_game)>
 
-![alt text](https://images-na.ssl-images-amazon.com/images/I/91Z5YgjHMhL._SL1500_.jpg "Trouble board game by Hasbro")
+![alt text](img/board_game.jpg "Trouble board game by Hasbro")
 
 
 ### Rules
@@ -45,15 +45,3 @@
 * A player may choose to forfeit his turn even if at least one of his pieces is eligible to advance.
 
 * A player gets another turn after rolling a six, even if he is unable to play the six he just rolled.
-
-
-### Reference Links for Project
-
-1. <http://svgtutorial.com/>
-2. <http://www.svgbasics.com/>
-3. <http://www.w3schools.com/svg/>
-4. <https://channel9.msdn.com/Events/MIX/MIX11/HTM15>
-5. <https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial>
-6. <http://www.petercollingridge.co.uk/sites/files/peter/3D_cube.svg>
-7. <http://www.htmlgoodies.com/html5/client/the-complete-guide-to-building-html5-games-with-canvas-svg.html#fbid=8UdQ4JGERHJ>
-
