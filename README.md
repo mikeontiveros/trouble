@@ -10,6 +10,8 @@
 
 * Users will have the option to have the computer play for any of the colors, including an all-computer game of up to four players.
 
+* Players determine who goes first by each clicking the pop-o-matic with the goal of rolling the highest number.  Ties are broken with another round of rolls amongst the highest rollers of the previous round.
+
 * Each player has a "home base" and a "finish lane", both with four slots for his four pieces.
 
 * The four slots in each home base are unordered, i.e. they are equivalent.
@@ -39,6 +41,8 @@
 * A player may use his turn to advance pieces within his finish lane.
 
 * If a player cannot make a move given what he has rolled, he forfeits that turn.
+
+* A player may choose to forfeit his turn even if at least one of his pieces is eligible to advance.
 
 * A player gets another turn after rolling a six, even if he is unable to play the six he just rolled.
 

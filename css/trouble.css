@@ -1,0 +1,94 @@
+* {
+    font-family: 'Courier New', monospace;
+}
+h1 {
+    font-size: 4vmin;
+    text-align: center;
+    margin-bottom: 1vmin;
+}
+#board {
+    width: 82vmin;
+    height: 85vmin;
+    padding: 0;
+    margin: 0 auto;
+    border: solid black 0.5vmin;
+    background-color: rgb(207,207,207);
+}
+.row {
+    width: 100%;
+    height: 5vmin;
+}
+.cell {
+    display: inline-block;
+    float: left;
+    padding: 0;
+    margin: 0;
+    border: solid transparent 0.5vmin;
+    width: 4vmin;
+    height: 4vmin;
+    font-size: 4vmin;
+    color: black;
+    text-align: center;
+}
+.red {
+    border: solid red 0.5vmin;
+}
+.yellow {
+    border: solid yellow 0.5vmin;
+}
+.green {
+    border: solid green 0.5vmin;
+}
+.blue {
+    border: solid blue 0.5vmin;
+}
+.black {
+    border: solid black 0.5vmin;
+}
+.hole {
+    border-radius: 2vmin;
+}
+.red.dugout {
+    background-color: rgba(255, 0, 0, 0.25);
+}
+.yellow.dugout {
+    background-color: rgba(255, 255, 0, 0.5);
+}
+.green.dugout {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+.blue.dugout {
+    background-color: rgba(0, 0, 255, 0.25);
+}
+.enable {
+    color: white;
+    background-color: black;
+}
+#gamelog {
+    text-align: center;
+    font-size: 2vmin;
+    margin: 2vmin auto;
+    width: 82vmin;
+    padding: 0.5vmin;
+    /*height: 5vmin;*/
+    border: solid black 3px;
+    border-radius: 10px;
+}
+button {
+    background-color: #4CAF50; /* Green */
+    display: block;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 40px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3vmin;
+}
+footer {
+    text-align: center;
+    margin: 2vmin auto;
+}
+#die {
+    border: solid black 0.5vmin;
+    background-color: white;
+}
