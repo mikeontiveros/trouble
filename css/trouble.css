@@ -1,94 +1,102 @@
 * {
-    font-family: 'Courier New', monospace;
+    font-family: "Courier New", monospace;
 }
 h1 {
     font-size: 4vmin;
     text-align: center;
-    margin-bottom: 1vmin;
+    margin: 1vmin 0;
 }
 #board {
-    width: 65vmin;
+    width: 68vmin;
     height: 68vmin;
-    padding: 0;
-    margin: 0 auto;
+    padding: 3vmin 0 0 3vmin;
     border: solid black 0.5vmin;
+    margin: 0 auto;
     background-color: rgb(207,207,207);
+    border-radius: 2vmin;
 }
 .row {
-    width: 100%;
-    height: 4vmin;
+    clear: both;
 }
 .cell {
     display: inline-block;
     float: left;
-    padding: 0;
-    margin: 0;
-    border: solid transparent 0.5vmin;
     width: 3vmin;
     height: 3vmin;
+    padding: 0;
+    border: solid transparent 0.5vmin;
+    margin: 0;
     font-size: 3vmin;
     color: black;
     text-align: center;
 }
-.red {
-    border: solid red 0.5vmin;
-}
-.yellow {
-    border: solid yellow 0.5vmin;
-}
-.green {
-    border: solid green 0.5vmin;
-}
-.blue {
-    border: solid blue 0.5vmin;
-}
-.black {
-    border: solid black 0.5vmin;
-}
 .hole {
+    border: solid 0.5vmin;
     border-radius: 2vmin;
 }
-.red.dugout {
+.red {
+    border-color: red;
+}
+.yellow {
+    border-color: yellow;
+}
+.green {
+    border-color: green;
+}
+.blue {
+    border-color: blue;
+}
+.black {
+    border-color: black;
+}
+.base {
+    border: solid black 0.5vmin;
+    border-radius: 1vmin;
+}
+.red.base {
     background-color: rgba(255, 0, 0, 0.25);
 }
-.yellow.dugout {
+.yellow.base {
     background-color: rgba(255, 255, 0, 0.5);
 }
-.green.dugout {
+.green.base {
     background-color: rgba(0, 255, 0, 0.5);
 }
-.blue.dugout {
+.blue.base {
     background-color: rgba(0, 0, 255, 0.25);
 }
 .enable {
     color: white;
     background-color: black;
+    border-radius: 1vmin;
 }
 #gamelog {
+    width: 71vmin;
+    padding: 0.5vmin;
+    margin: 1vmin auto;
     text-align: center;
     font-size: 2vmin;
-    margin: 2vmin auto;
-    width: 65vmin;
-    padding: 0.5vmin;
     /*height: 5vmin;*/
-    border: solid black 3px;
-    border-radius: 10px;
+    border: solid black 0.5vmin;
+    border-radius: 2vmin;
+    clear: both;
 }
 button {
-    background-color: #4CAF50; /* Green */
     display: block;
-    border-radius: 10px;
-    color: white;
-    padding: 5px 40px;
+    padding: 0.5vmin 2vmin;
     margin: 0 auto;
     text-align: center;
     font-size: 3vmin;
+    color: white;
+    background-color: #4CAF50; /* Green */
+    border-radius: 2vmin;
 }
 footer {
-    text-align: center;
+    clear: both;
     margin: 2vmin auto;
+    text-align: center;
 }
 #die {
-    border: solid black 0.5vmin;
     background-color: white;
+    border: solid black 0.5vmin;
 }

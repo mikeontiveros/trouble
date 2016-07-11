@@ -9,11 +9,13 @@
 <body>
     <header><h1>TROUBLE!</h1></header>
     <main>
+
         <div id="board">
+
             <div class="row">
                 <div class="cell"></div>
-                <div class="cell enable" id="e0">X</div>
-                <div class="cell red dugout" id="d0">4</div>
+                <div class="cell enable" id="e0">C</div>
+                <div class="cell red base" id="b0">4</div>
                 <div class="cell"></div>
                 <div class="cell"></div>
                 <div class="cell"></div>
@@ -65,7 +67,7 @@
                 <div class="cell"></div>
                 <div class="cell"></div>
                 <div class="cell yellow hole" id="h7"></div>
-                <div class="cell yellow dugout" id="d1">0</div>
+                <div class="cell yellow base" id="b1">0</div>
             </div>
             <div class="row">
                 <div class="cell"></div>
@@ -150,11 +152,11 @@
                 <div class="cell"></div>
                 <div class="cell"></div>
                 <div class="cell"></div>
+                <div class="cell place" id="p0"></div>
                 <div class="cell"></div>
                 <div class="cell"></div>
                 <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
+                <div class="cell place" id="p1"></div>
                 <div class="cell"></div>
                 <div class="cell"></div>
                 <div class="cell"></div>
@@ -188,11 +190,11 @@
                 <div class="cell"></div>
                 <div class="cell"></div>
                 <div class="cell"></div>
+                <div class="cell place" id="p3"></div>
                 <div class="cell"></div>
                 <div class="cell"></div>
                 <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
+                <div class="cell place" id="p2"></div>
                 <div class="cell"></div>
                 <div class="cell"></div>
                 <div class="cell"></div>
@@ -277,7 +279,7 @@
                 <div class="cell"></div>
             </div>
             <div class="row">
-                <div class="cell blue dugout" id="d3">0</div>
+                <div class="cell blue base" id="b3">0</div>
                 <div class="cell blue hole" id="h21"></div>
                 <div class="cell"></div>
                 <div class="cell"></div>
@@ -329,13 +331,17 @@
                 <div class="cell"></div>
                 <div class="cell"></div>
                 <div class="cell"></div>
-                <div class="cell green dugout" id="d2">4</div>
-                <div class="cell enable" id="e2">X</div>
+                <div class="cell green base" id="b2">4</div>
+                <div class="cell enable" id="e2">C</div>
                 <div class="cell"></div>
             </div>
+
         </div>
-        <div id="gamelog">Click on a black box to enable the adjacent color.<br>  At least two colors must be enabled to play a game.</div>
+
+        <div id="gamelog">Click on a black box to enable the adjacent color as a human (H) or computer (C) player.  At least two colors must be enabled to play a game.</div>
+
         <button type="button" id="requestGame">Start Game</button>
+
     </main>
     <footer></footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
